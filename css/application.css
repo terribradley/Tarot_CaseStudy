@@ -374,9 +374,11 @@ body {
 header {
   height: 80vh;
   display: flex;
-  background-image: url("../img/background.png");
+  background-image: url("../img/background_2.png");
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
   header #logo {
     display: flex;
     width: 25%;
@@ -388,12 +390,12 @@ header {
     align-self: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    letter-spacing: 4px;
+    font-size: 3em;
+    letter-spacing: 6px;
     color: white; }
     header h1 .title {
       font-family: "Fjalla One", sans-serif;
-      font-size: 1.5em;
+      font-size: 2.5em;
       text-transform: uppercase; }
 
 h1, h2 {
@@ -415,12 +417,12 @@ section {
       display: flex;
       flex-direction: column;
       width: 50%;
-      padding: 2%; }
+      padding: 5%; }
       section .content .text h1 {
-        font-size: 2.5em;
+        font-size: 4em;
         font-family: "Fjalla One", sans-serif; }
       section .content .text h2 {
-        font-size: 1em;
+        font-size: 1.8em;
         font-family: 'Roboto', sans-serif; }
     section .content .img-examples {
       width: 50%;
@@ -435,41 +437,68 @@ section {
   flex-direction: column;
   align-items: center; }
   .overview h1 {
-    margin-top: 2%;
+    margin-top: 3%;
     font-family: "Fjalla One", sans-serif;
-    font-size: 2.5em; }
+    font-size: 4em; }
   .overview h2 {
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: lighter;
     padding: 5% 30%;
     text-align: center;
     font-family: 'Roboto', sans-serif; }
 
-.process, .solution {
+.process, .result {
   background-color: #F0EBDA;
-  height: 90vh; }
+  height: 85vh; }
 
-.context, .result {
+.solution {
+  height: 85vh;
+  background-color: #DFDAC9; }
+  .solution .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .solution .content .text-center {
+      width: 40%;
+      padding: 5%; }
+      .solution .content .text-center h1 {
+        font-size: 4em;
+        font-family: "Fjalla One", sans-serif; }
+      .solution .content .text-center h2 {
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter; }
+    .solution .content .img-examples-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+
+.context {
   background-image: url("../img/background_2.png");
   background-position: center;
   background-attachment: fixed;
   color: white;
-  height: 90vh; }
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .slider-wrap {
-  width: 250px;
-  height: 450px; }
+  width: 350px;
+  height: 700px; }
 
 .slider {
   overflow-x: scroll;
   border-radius: 5px; }
 
 .holder {
-  width: 275%; }
+  width: 475%; }
 
 .slide {
   float: left;
-  width: 250px;
-  height: 450px;
+  width: 350px;
+  height: 750px;
   background-position: -100px 0; }
 
 #slide-0 {
@@ -480,6 +509,12 @@ section {
 
 #slide-1 {
   background-image: url(../img/wireframe_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+#slide-2 {
+  background-image: url(../img/wireframe_3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -497,7 +532,7 @@ section {
   text-indent: -9999px;
   border-radius: 50%; }
 
-.slider-nav a.active {
+.slider-nav a:active {
   background: black; }
 
 /*# sourceMappingURL=application.css.map */

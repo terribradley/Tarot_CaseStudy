@@ -6,11 +6,11 @@ body {
 header {
   height: 80vh;
   display: flex;
-  background-image: url("../img/background.png");
+  background-image: url("../img/background_2.png");
   background-position: center;
   background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   #logo {
     display: flex;
     width: 25%;
@@ -24,12 +24,12 @@ header {
     align-self: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    letter-spacing: 4px;
+    font-size: 3em;
+    letter-spacing: 6px;
     color: white;
     .title {
       font-family: "Fjalla One", sans-serif;
-      font-size: 1.5em;
+      font-size: 2.5em;
       text-transform: uppercase;
     }
   }
@@ -86,13 +86,13 @@ h1, h2 {
       display: flex;
       flex-direction: column;
       width: 50%;
-      padding: 2%;
+      padding: 5%;
       h1 {
-        font-size: 2.5em;
+        font-size: 4em;
         font-family: "Fjalla One", sans-serif;
       }
       h2 {
-        font-size: 1em;
+        font-size: 1.8em;
         font-family: 'Roboto', sans-serif;
       }
     }
@@ -112,46 +112,77 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   h1 {
-    margin-top: 2%;
+    margin-top: 3%;
     font-family: "Fjalla One", sans-serif;
-    font-size: 2.5em;
+    font-size: 4em;
   }
   h2 {
-    font-size: 1em;
+    font-size: 2em;
+    font-weight: lighter;
     padding: 5% 30%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
   }
 }
-.process, .solution {
+.process, .result {
   background-color: #F0EBDA;
-  height: 90vh;
-
+  height: 85vh;
 }
-.context, .result {
+.solution {
+  height: 85vh;
+  background-color: #DFDAC9;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .text-center {
+      width: 40%;
+      padding: 5%;
+      h1 {
+        font-size: 4em;
+        font-family: "Fjalla One", sans-serif;
+      }
+      h2 {
+        font-size: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+      }
+    }
+    .img-examples-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+.context {
   background-image: url("../img/background_2.png");
   background-position: center;
   background-attachment: fixed;
   color: white;
   height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // **********wireframe slide**********
 .slider-wrap {
-  width: 250px;
-  height: 450px;
+  width: 350px;
+  height: 700px;
 }
 .slider {
   overflow-x: scroll;
   border-radius: 5px;
 }
 .holder {
-  width: 275%;
+  width: 475%;
 }
 .slide {
   float: left;
-  width: 250px;
-  height: 450px;
+  width: 350px;
+  height: 750px;
   background-position: -100px 0;
 }
 #slide-0 {
@@ -162,6 +193,12 @@ h1, h2 {
 }
 #slide-1 {
   background-image: url(../img/wireframe_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#slide-2 {
+  background-image: url(../img/wireframe_3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -180,7 +217,7 @@ h1, h2 {
   text-indent: -9999px;
   border-radius: 50%;
 }
-.slider-nav a.active {
+.slider-nav a:active {
   background: black;
 }
 // .come-in {
