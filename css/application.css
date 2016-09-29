@@ -419,10 +419,11 @@ section {
       width: 50%;
       padding: 5%; }
       section .content .text h1 {
-        font-size: 4em;
-        font-family: "Fjalla One", sans-serif; }
+        font-size: 3.5em;
+        font-family: "Fjalla One", sans-serif;
+        margin-bottom: 2%; }
       section .content .text h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-family: 'Roboto', sans-serif; }
     section .content .img-examples {
       width: 50%;
@@ -449,10 +450,10 @@ section {
 
 .process, .result {
   background-color: #F0EBDA;
-  height: 85vh; }
+  height: 88vh; }
 
 .solution {
-  height: 85vh;
+  height: 88vh;
   background-color: #DFDAC9; }
   .solution .content {
     display: flex;
@@ -461,12 +462,14 @@ section {
     align-items: center; }
     .solution .content .text-center {
       width: 40%;
-      padding: 5%; }
+      padding: 2%; }
       .solution .content .text-center h1 {
-        font-size: 4em;
-        font-family: "Fjalla One", sans-serif; }
+        font-size: 3.5em;
+        font-family: "Fjalla One", sans-serif;
+        margin-bottom: 2%;
+        text-align: center; }
       .solution .content .text-center h2 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-family: 'Roboto', sans-serif;
         font-weight: lighter; }
     .solution .content .img-examples-bottom {
@@ -486,7 +489,7 @@ section {
 
 .slider-wrap {
   width: 350px;
-  height: 700px; }
+  height: 650px; }
 
 .slider {
   overflow-x: scroll;
@@ -498,7 +501,7 @@ section {
 .slide {
   float: left;
   width: 350px;
-  height: 750px;
+  height: 650px;
   background-position: -100px 0; }
 
 #slide-0 {
