@@ -5,3 +5,9 @@ $("document").ready(function() {
 						scrollTop: $("#overview").offset().top
 					}, 2000);
 				 });
+
+         $(".headline").scrollPath({
+             drawPath: true,
+             wrapAround: true,
+             scrollBar: false
+         });
