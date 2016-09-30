@@ -368,31 +368,74 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.paper {
+  position: fixed;
+  border: solid #434242; }
+
+.paper.edge-top {
+  top: 0;
+  right: 90px;
+  left: 27px;
+  height: 27px;
+  border-width: 0 0 3px 0;
+  z-index: 101; }
+
+.paper.edge-right {
+  top: 90px;
+  right: 0;
+  bottom: 27px;
+  width: 27px;
+  border-width: 0 0 0 3px;
+  z-index: 102; }
+
+.paper.edge-bottom {
+  bottom: 0;
+  right: 27px;
+  left: 27px;
+  height: 26px;
+  border-width: 3px 0 0 0;
+  z-index: 103; }
+
+.paper.edge-left {
+  top: 27px;
+  left: 0;
+  bottom: 27px;
+  width: 27px;
+  border-width: 0 3px 0 0;
+  z-index: 104; }
+
+.paper.corner {
+  top: 27px;
+  right: 48px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 105; }
+  .paper.corner img {
+    height: 66px;
+    width: 66px; }
+
 body {
-  width: 100%; }
+  background-color: #faf6f0; }
 
 header {
-  height: 80vh;
+  height: 100vh;
   display: flex;
-  background-image: url("../img/background_2.png");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  header #logo {
-    display: flex;
-    width: 25%;
-    padding: 2%; }
-    header #logo img {
-      align-self: flex-start; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  header img {
+    margin-bottom: 5%; }
   header h1 {
-    width: 50%;
-    align-self: center;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-size: 3em;
     letter-spacing: 6px;
-    color: white; }
+    color: black; }
     header h1 .title {
       font-family: "Fjalla One", sans-serif;
       font-size: 2.5em;
@@ -404,7 +447,10 @@ h1, h2 {
 section {
   display: flex;
   flex-direction: column;
-  width: 100%; }
+  width: 100%;
+  background-color: #FBCF9C;
+  width: 95vw;
+  margin: 0 2%; }
   section .icon {
     width: 98%;
     display: flex;
@@ -422,120 +468,54 @@ section {
         font-size: 3.5em;
         font-family: "Fjalla One", sans-serif;
         margin-bottom: 2%; }
-      section .content .text h2 {
-        font-size: 1.5em;
-        font-family: 'Roboto', sans-serif; }
+      section .content .text p {
+        font-size: 1.4em;
+        font-family: 'Roboto', sans-serif;
+        margin: 10px; }
     section .content .img-examples {
       width: 50%;
-      padding: 2%;
+      padding: 1%;
       display: flex;
       justify-content: space-around;
       align-items: center; }
 
+#overview {
+  height: 0px; }
+
 .overview {
-  background-color: #FBCF9C;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-top: 2%; }
   .overview h1 {
     margin-top: 3%;
     font-family: "Fjalla One", sans-serif;
     font-size: 4em; }
-  .overview h2 {
-    font-size: 2em;
+  .overview p {
+    font-size: 1.8em;
     font-weight: lighter;
     padding: 5% 30%;
     text-align: center;
     font-family: 'Roboto', sans-serif; }
 
 .process, .result {
-  background-color: #F0EBDA;
-  height: 88vh; }
+  height: 94vh;
+  background-color: #E3DFD9; }
 
 .solution {
-  height: 88vh;
-  background-color: #DFDAC9; }
-  .solution .content {
+  height: 94vh;
+  background-color: #faf6f0; }
+  .solution .text-bottom {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
-    .solution .content .text-center {
-      width: 40%;
-      padding: 2%; }
-      .solution .content .text-center h1 {
-        font-size: 3.5em;
-        font-family: "Fjalla One", sans-serif;
-        margin-bottom: 2%;
-        text-align: center; }
-      .solution .content .text-center h2 {
-        font-size: 1.5em;
-        font-family: 'Roboto', sans-serif;
-        font-weight: lighter; }
-    .solution .content .img-examples-bottom {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
+    .solution .text-bottom h1 {
+      margin-bottom: 1%; }
 
 .context {
-  background-image: url("../img/background_2.png");
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.slider-wrap {
-  width: 350px;
-  height: 650px; }
-
-.slider {
-  overflow-x: scroll;
-  border-radius: 5px; }
-
-.holder {
-  width: 475%; }
-
-.slide {
-  float: left;
-  width: 350px;
-  height: 650px;
-  background-position: -100px 0; }
-
-#slide-0 {
-  background-image: url(../img/wireframe_1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-#slide-1 {
-  background-image: url(../img/wireframe_2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-#slide-2 {
-  background-image: url(../img/wireframe_3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.slider-nav {
-  text-align: center;
-  margin: 2% 0 0 0; }
-
-.slider-nav a {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: #ddd;
-  overflow: hidden;
-  text-indent: -9999px;
-  border-radius: 50%; }
-
-.slider-nav a:active {
-  background: black; }
+  background-color: #faf6f0;
+  height: 94vh; }
 
 /*# sourceMappingURL=application.css.map */
