@@ -1,5 +1,8 @@
 @import "normalize";
+@import "library/bourbon/bourbon";
+@import "main-content";
 @import "paper";
+@import "nav";
 @import "https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Roboto+Condensed";
 
 body {
@@ -15,6 +18,7 @@ header {
     margin-bottom: 5%;
   }
   h1 {
+    @include transition();
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -31,111 +35,4 @@ header {
 
 h1, h2 {
   margin: 0;
-}
-
-// **********main content************
- section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #FBCF9C;
-  width: 95vw;
-  margin: 0 2%;
-  .icon {
-    width: 98%;
-    display: flex;
-    justify-content: center;
-    padding: 2% 0;
-  }
-  .content {
-    width: 100%;
-    display: flex;
-    .text {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      padding: 5%;
-      h1 {
-        font-size: 3.5em;
-        font-family: "Fjalla One", sans-serif;
-        margin-bottom: 2%
-      }
-      p {
-        font-size: 1.4em;
-        font-family: 'Roboto', sans-serif;
-        margin: 10px;
-      }
-    }
-    .img-examples {
-      width: 50%;
-      padding:1%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-  }
-}
-#overview {
-  height: 0px;
-}
-.overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2%;
-  h1 {
-    margin-top: 3%;
-    font-family: "Fjalla One", sans-serif;
-    font-size: 4em;
-  }
-  p {
-    font-size: 1.8em;
-    font-weight: lighter;
-    padding: 5% 30%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-  }
-}
-.process, .result {
-  height: 94vh;
-  background-color: #E3DFD9;
-}
-.solution {
-  height: 94vh;
-  background-color: #faf6f0;
-  // .content {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-around;
-  //   align-items: center;
-  //   .text-center {
-  //     width: 40%;
-  //     padding: 2%;
-  //     h1 {
-  //       font-size: 3.5em;
-  //       font-family: "Fjalla One", sans-serif;
-  //       margin-bottom: 2%;
-  //       text-align: center;
-  //     }
-  //     p {
-  //       font-size: 1.5em;
-  //       font-family: 'Roboto', sans-serif;
-  //       font-weight: lighter;
-  //     }
-  //   }
-    .text-bottom {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      h1 {
-        margin-bottom: 1%;
-      }
-    }
-  // }
-}
-.context {
-  background-color: #faf6f0;
-  height: 94vh;
 }

@@ -10,6 +10,7 @@
     height: 27px;
     border-width: 0 0 3px 0;
     z-index: 101;
+    @include transition();
   }
   .paper.edge-right {
     top: 90px;
@@ -18,6 +19,7 @@
     width: 27px;
     border-width: 0 0 0 3px;
     z-index: 102;
+    @include transition();
   }
   .paper.edge-bottom {
     bottom: 0;
@@ -26,6 +28,7 @@
     height: 26px;
     border-width: 3px 0 0 0;
     z-index: 103;
+    @include transition();
   }
   .paper.edge-left {
     top: 27px;
@@ -35,21 +38,24 @@
     border-width: 0 3px 0 0;
     z-index: 104;
   }
-  .paper.corner {
-    img {
-      height: 66px;
-      width: 66px;
-    }
-    top: 27px;
-    right: 48px;
-    width: 45px;
-    height: 45px;
-    border: none;
+  label {
+    position: fixed;
+      img {
+        height: 66px;
+        width: 66px;
+      }
+      top: 27px;
+      right: 48px;
+      width: 45px;
+      height: 45px;
+      border: none;
 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    // white-space: nowrap;
-    // overflow: hidden;
-    cursor: pointer;
-    z-index: 105;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      // white-space: nowrap;
+      // overflow: hidden;
+      cursor: pointer;
+      z-index: 105;
+
+
   }
