@@ -10,10 +10,10 @@ Error: Undefined mixin 'transition'.
 6:   right: 48px;
 7:   @include transition();
 8:   z-index: 1;
-9:   // @media screen and (min-width: 600px) {
-10:   //   @include position(fixed, 2% 0 0 93%);
-11:   // }
-12:   // @media screen and (min-width: 1300px) {
+9: }
+10: .page-content {
+11:   position: relative;
+12:   z-index: 0;
 
 Backtrace:
 scss/nav.scss:7:in `transition'
@@ -69,4 +69,4 @@ scss/nav.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'transition'.\A         on line 7 of scss/nav.scss, in `transition'\A         from line 7 of scss/nav.scss\A \A 2:   font-size: 2em;\A 3:   color: black;\A 4:   position: fixed;\A 5:   top: 27px;\A 6:   right: 48px;\A 7:   @include transition();\A 8:   z-index: 1;\A 9:   // @media screen and (min-width: 600px) {\A 10:   //   @include position(fixed, 2% 0 0 93%);\A 11:   // }\A 12:   // @media screen and (min-width: 1300px) {"; }
+  content: "Error: Undefined mixin 'transition'.\A         on line 7 of scss/nav.scss, in `transition'\A         from line 7 of scss/nav.scss\A \A 2:   font-size: 2em;\A 3:   color: black;\A 4:   position: fixed;\A 5:   top: 27px;\A 6:   right: 48px;\A 7:   @include transition();\A 8:   z-index: 1;\A 9: }\A 10: .page-content {\A 11:   position: relative;\A 12:   z-index: 0;"; }

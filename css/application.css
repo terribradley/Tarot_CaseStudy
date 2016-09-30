@@ -552,14 +552,13 @@ label {
       margin-right: 3%;
       list-style: none;
       font-size: 1em;
-      margin-bottom: 16px; }
-      .sidebar ul li a {
-        text-decoration: none;
-        color: black;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2em; }
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2em; }
       .sidebar ul li:hover {
-        color: white; }
+        text-decoration: underline; }
 
 #sidebar-toggler {
   display: none; }
